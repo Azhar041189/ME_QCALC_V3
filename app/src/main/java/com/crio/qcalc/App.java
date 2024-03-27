@@ -9,16 +9,14 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println("Starting QCalc..");
-        StandardCalculator calc = new StandardCalculator();
-        calc.add(1, 2);
-        calc.subtract(1, 1);
-        calc.multiply(2, 2);
-        calc.divide(4, 2);
+        System.out.println(new App().getGreeting());
+        ScientificCalculator calc = new ScientificCalculator();
+        /*double result= calc.cubeOf(4.0);
+        System.out.println("cube =" + result);*/
         
-    System.out.println(calc.getResult());
+        int result= calc.modulo(5, 2);
+        System.out.println("modulo =" + result);
 
     }
 }
-
 
