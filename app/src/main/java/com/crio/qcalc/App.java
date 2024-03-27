@@ -8,27 +8,17 @@ public class App {
         return "Hello World!";
     }
 
-    public int sum(int a, int b){
-        int c = a;
-        int d = b;
-        int sum = a * b;
-        getGreeting();
-        return a * b;
-      
-    }
-
     public static void main(String[] args) {
+        System.out.println("Starting QCalc..");
+        StandardCalculator calc = new StandardCalculator();
+        calc.add(1, 2);
+        calc.subtract(1, 1);
+        calc.multiply(2, 2);
+        calc.divide(4, 2);
         
-            int num = 789;
-            int reversednum = 0;
-            int remainder;
-            while (num != 0) {
-                remainder = num % 10;
-                reversednum = reversednum * 10 + remainder;
-                num /= 10;
-            }
-            System.out.println("Reversed number is "+ reversednum);
-        }
-    
+    System.out.println(calc.getResult());
+
     }
+}
+
 
